@@ -1,0 +1,123 @@
+{
+    // editor settings
+    "editor.minimap.enabled": false,
+    "editor.suggestSelection": "first",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.inlineSuggest.enabled": true,
+    "editor.linkedEditing": true,   // change to false to disable auto html and jsx tag dual auto rename I think
+    "editor.lineNumbers": "relative",
+    "editor.stickyScroll.enabled": true,
+    "editor.suggest.insertMode": "replace",
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "always",
+        // "source.addMissingImports": true,
+    },
+    "zenMode.hideLineNumbers": false,
+    "editor.unicodeHighlight.allowedCharacters": {
+        "ä": true,
+        "é": true,
+        "ö": true
+    },
+    "terminal.integrated.tabs.enabled": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.editor.enablePreview": false,
+    "workbench.startupEditor": "none",
+    "explorer.compactFolders": false,
+    "git.confirmSync": false,
+    
+    // vim stuff
+    // look into https://stackoverflow.com/questions/38957302/is-there-a-quick-change-tabs-function-in-visual-studio-code
+    "vim.leader": "<space>",
+    "vim.foldfix": true,
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.ignorecase": true,
+    "vim.smartcase": true,
+    "vim.highlightedyank.enable": true,
+    "vim.highlightedyank.textColor": "white",
+    "vim.insertModeKeyBindingsNonRecursive": [
+        {
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
+        },
+        {
+            "before": ["ctrl+s"],
+            "after": ["<Esc>"]
+        },
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<leader>", "d"],
+            "after": ["d", "d"]
+        },
+        {
+            "before": ["<C-n>"],
+            "commands": [":nohl"]
+        },
+        {
+            "before": ["K"],
+            "commands": ["editor.action.showHover"],
+            "silent": true
+        },
+        {
+            "before": ["[", "d"],
+            "commands": ["editor.action.mark.prev"]
+        },
+        {
+            "before": ["]", "d"],
+            "commands": ["editor.action.mark.next"]
+        },
+        {
+            "before": ["leader", "c", "a"],
+            "commands": ["editor.action.quickFix"]
+        },
+        {
+            "before": ["<C-d>"],
+            "after": ["<C-d>", "z", "z"]
+        },
+        {
+            "before": ["<C-u>"],
+            "after": ["<C-u>", "z", "z"]
+        },
+        {
+            "before": ["n"],
+            "after": ["n", "z", "z"]
+        },
+        {
+            "before": ["N"],
+            "after": ["N", "z", "z"]
+        },
+        {
+            "before": ["<Esc>"],
+            "commands": [":nohl"]
+        },
+        {
+            "before": ["<leader>", "s", "f"],
+            "commands": ["workbench.action.quickOpen"]
+        },
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": ["tab"],
+            "after": [">", "g", "v"]
+        },
+        {
+            "before": ["shift+tab"],
+            "after": ["<", "g", "v"]
+        },
+    ],
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false,
+        "<C-c>": false,
+        "<C-v>": false,
+        "<C-p>": false,
+    },
+    // To improve performance
+    "extensions.experimental.affinity": {
+        "vscodevim.vim": 1
+    },
+}
